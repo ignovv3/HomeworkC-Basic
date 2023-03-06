@@ -13,7 +13,10 @@ for(int i = 0; i<array.Length; i++)
         Console.WriteLine($"Invalid input. Please enter a integer value for the element {i + 1}");
     }
 
-    sum += array[i];
+    if (array[i] % 2 == 0)
+    {
+        sum += i;
+    }
 }
 
 Console.WriteLine($"The result is: {sum}");
